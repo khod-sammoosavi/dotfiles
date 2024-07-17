@@ -1,0 +1,25 @@
+live_config_reload = true
+import = ["~/.config/alacritty/themes/google.toml"]
+
+[shell]
+  program = "/bin/fish"
+  args = ["-l"]
+[env]
+  TERM = "tmux-256color"
+  WINIT_X11_SCALE_FACTOR = "1.0"
+[window]
+  title = "Alacritty"
+  dynamic_title = true
+  dynamic_padding = true
+  decorations_theme_variant = "Dark"
+  padding = {x = 6, y = 6}
+  opacity = 1.0
+[font]
+  size = 11.0
+  normal = {family = "JetBrainsMono Nerd Font", style = "Medium"}
+
+[keyboard]
+bindings = [
+  {key = "F11", action = "ToggleFullscreen"},
+  {key = "F3", action = "SearchForward"},
+]
